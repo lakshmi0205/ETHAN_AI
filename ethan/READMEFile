@@ -1,0 +1,45 @@
+# Financial Microservice
+
+## Project Description
+This project is a Django-based microservice designed to handle financial data validation for a financial application. It provides REST API endpoints for managing financial data, including CRUD operations and validation.
+
+## Features
+- PostgreSQL database integration for storing financial data.
+- Docker setup for local development and testing.
+- Exposes REST API endpoints for CRUD operations and validation.
+- Pagination for API endpoints returning large amounts of data.
+- Logging for tracking operations and errors.
+- Proper error handling and status code responses.
+
+## Installation and Setup
+1. Clone the repository:
+
+
+2. Set up Docker and Docker Compose on your system.
+
+3. Build and run the Docker containers:
+
+4. Access the API endpoints at http://localhost:8000/.
+
+## API Endpoints
+- `/financial_data/`: Endpoint for listing all financial data or creating a new entry.
+- `/financial_data/<pk>/`: Endpoint for retrieving, updating, or deleting a specific financial data entry.
+- `/calculate_market_value/`: Endpoint for calculating market value for all financial data entries.
+
+## Testing
+1. Write unit tests for your Django application.
+2. Run tests using the following command:
+
+## Deployment
+- Deploy the application to your preferred hosting provider.
+- Set up environment variables and configure settings for production deployment.
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`
+3. Make your changes and commit them: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
